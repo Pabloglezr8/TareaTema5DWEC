@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+        <div class="hero-container">
+            <div class="hero-body">
+                <h1>Objeto Form</h1>
+                <h2>Manipulación de elementos y nodos con JavaScript</h2>
+            </div>
+        </div>
+
+    <div class="form-container">
+        <form action="/templates/enviado.html" method="get" id="formulario">
+            <input  name="name" id="name" type="text" placeholder="Nombre">
+            <input  name="surname" id="surname" type="text" placeholder="Apellido">
+            <input  name="tlf" id="tlf" type="text" placeholder="Telefono">
+            <input  name="mail" id="mail" type="text" placeholder="Correo Electronico">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Déjanos un mensage"></textarea>
+            <input type="submit" name="send" id="send" value="Enviar">
+            
+            <div id="avisoFinal"><ul id="errores"></ul></div>
+        </form>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
